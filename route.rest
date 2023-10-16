@@ -1,0 +1,56 @@
+GET http://localhost:8090/api/v1/emp/employees
+
+###
+GET http://localhost:8090/api/v1/emp/employees/652c70946087fe7d973e32ab
+
+###
+POST http://localhost:8090/api/v1/emp/employees
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john@example.com",
+  "gender": "Male",
+  "salary": 530000
+}
+
+###
+
+DELETE http://localhost:8090/api/v1/emp/employees?eid=652c6ee768b09258f981cc8c
+
+###
+
+PUT http://localhost:8090/api/v1/emp/employees/652c70946087fe7d973e32ab
+Content-Type: application/json
+
+{
+  "first_name": "Jane",
+  "email": "jane@example.com",
+  "gender": "Female",
+  "salary": 600000
+}
+
+
+###
+GET http://localhost:8090/api/v1/user
+
+###
+POST http://localhost:8090/api/v1/user/signup
+Content-Type: application/json
+
+{
+  "username": "NewUser",
+  "email": "news@example.com",
+  "password": "password123"
+}
+
+###
+POST  http://localhost:8090/api/v1/user/login
+Content-Type: application/json
+
+{
+  "username": "CarlAdmin",
+  "password": "password123"
+}
+
