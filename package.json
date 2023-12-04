@@ -4,14 +4,16 @@
   "description": "Assignment 1 of Full Stack",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "dotenv nodemon server.js"
   },
   "author": "Carl Wright",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.6.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^7.6.6",
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
